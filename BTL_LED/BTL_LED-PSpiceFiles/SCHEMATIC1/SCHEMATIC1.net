@@ -1,0 +1,16 @@
+* source BTL_LED
+V_V1         N00450 0 3.3Vdc
+D_D1         N00450 N00504 MBR340 
+D_D2         N00450 N00510 MBR340 
+R_R1         N00518 N00504  330 TC=0,0 
+R_R2         N00514 N00510  330 TC=0,0 
+Q_Q1         N00518 N00525 0 QbreakN 
+Q_Q2         N00514 N00591 0 QbreakN 
+R_R3         N00725 N00525  4.7k TC=0,0 
+R_R4         N00525 0  47k TC=0,0 
+R_R5         N00753 N00591  4.7k TC=0,0 
+R_R6         N00591 0  47k TC=0,0 
+V_V2         N00725 0  
++PULSE 0 3.3 0 1us 1us 10ms 20ms
+V_V4         N00753 0  
++PULSE 0 3.3 10ms 1us 1us 10ms 20ms
